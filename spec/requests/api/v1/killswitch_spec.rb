@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe 'GET /api/v1/killswitch' do
-  it 'returns the instance info' do
-    get '/api/v1/killswitch'
+describe "GET /api/v1/killswitch" do
+  it "returns the instance info" do
+    get "/api/v1/killswitch"
 
     expect(response.status).to eq 200
     expect(response.parsed_body).to eq({
